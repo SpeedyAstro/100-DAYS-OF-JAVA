@@ -7,7 +7,7 @@ public class ws_05_anonymousaArray {
          * can be single or multi dimensional
          * can be used as an argument in method
          */
-        ws_05_anonymousaArray.sum(new int[]{10,20,40});
+        ws_05_anonymousaArray.sum(new int[]{10,20,40}); 
     }
     static void sum(int [] input){
         int total = 0;
