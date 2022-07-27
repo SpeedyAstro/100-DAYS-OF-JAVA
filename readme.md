@@ -2,7 +2,7 @@
 # LEARNING DSA IN JAVA 
 
 100 Days of DSA 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=Mr-Anubhav-pandey&label=Profile%20views&color=0e75b6&style=flat" alt="Mr-Anubhav-pandey" /> </p>
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=Mr-Anubhav-pandey&label=Repo%20views&color=0e75b6&style=flat" alt="Mr-Anubhav-pandey/100-DAYS-OF-JAVA_DSA" /> </p>
    
 
 ## 🔗 Links
