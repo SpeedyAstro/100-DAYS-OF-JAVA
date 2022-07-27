@@ -13,7 +13,7 @@ public class ws_04_arraywitfunc {
         }
     }
     public static int [] reverseArray(int[] input){ //taking integer array as a parameter
-        int [] reverse = new int[input.length];
+        int [] reverse = new int[input.length]; 
         for(int i=0,j = reverse.length-1;i<input.length;i++,j--){
             reverse[j] = input[i];
         }
