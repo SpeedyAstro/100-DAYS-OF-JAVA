@@ -24,6 +24,6 @@ public class ws_02_2dArray {
                 System.out.print(x[i][j]+" ");
             }
             System.out.println();
-        }
+        } 
     }
 }

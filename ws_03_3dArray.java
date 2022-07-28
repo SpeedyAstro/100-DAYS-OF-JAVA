@@ -18,7 +18,7 @@ public class ws_03_3dArray{
                     System.out.print(d[i][j][k]+" ");
                 }
                 System.out.println();
-            }
+            } 
         }
     }
 }

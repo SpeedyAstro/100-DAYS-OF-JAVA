@@ -28,7 +28,7 @@ class ws_01_introArray{
         int [] a,b; //creating/intializing two array in one line
         a = new int[0]; // cam ne declared with length 0
         //b = new int [-1]; // throw an error "NegativeArraySizeException"
-        int [] c = {10,21,22};
+        int [] c = {10,21,22}; 
 
     }
 }
