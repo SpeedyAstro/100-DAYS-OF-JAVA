@@ -1,4 +1,4 @@
-
+import java.util.*;
 public class ws_16_StringMethod {
     public static void main(String[] args) {
         /*
@@ -51,5 +51,11 @@ public class ws_16_StringMethod {
         // sting slicing ..
         System.out.println(name.subSequence(1, 4));
         System.out.println(name.substring(2));
+        // Replace method replace()
+        String x = "this is java";
+        System.out.println(x.replace("is", "was")); // thwas was java
+        System.out.println(x.replaceFirst("is", "was")); // thwas is java
+        System.out.println(x.replaceAll("is(.)", "was")); // thwaswasjava
+        System.out.println(x.replaceAll("is(.*)", "yash")); //thyash
     }
 }
