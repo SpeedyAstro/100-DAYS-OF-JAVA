@@ -43,6 +43,8 @@ public class ws_16_StringMethod {
         System.out.println(name+20/10); // returns yash2 [follows BODMAS]
         //concant() method concatenates one string to end of another string. this method returns a string with the value of string passed into the method, appended to the end of string.
         System.out.println(name.concat(name1)); // returns yashYash
+        name.concat(name1); // objects of string class are immutable hence any changes lead to change of object  
+        System.out.println(name+"yyyyyyyyyyyyyyyyyy");
         // join(charSequence delimiter, charSequence... elements) is the static method which concatenates the given elements with the delimiter and returns the concatenated string. it was included in jdk 1.8 version
         // note tf an element is null , then null is added and if delimiter is null then it will throw "java.lang.NullPointerException"
         System.out.println(String.join(",", name,name1)); // returns yash,Yash
