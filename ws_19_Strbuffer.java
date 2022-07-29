@@ -3,11 +3,13 @@ import java.util.*;
 
 public class ws_19_Strbuffer {
     /*
-     * main difference between string and stringBuffer is - string objects are immutable ans StringBuffer objects are mutable
+     * main difference between string and stringBuffer is - string objects are
+     * immutable ans StringBuffer objects are mutable
      * 
      * when to use string and stringBuffer
      * => if data do not changes or change one or two times only , use string
-     * => if data is constantly or frequently changes like in notepad , calc , stringbuffer should be used
+     * => if data is constantly or frequently changes like in notepad , calc ,
+     * stringbuffer should be used
      * 
      */
     public static void main(String[] args) {
@@ -20,17 +22,19 @@ public class ws_19_Strbuffer {
         sb1.append("pandey");
         System.out.println(sb1);
         System.out.println(sb.capacity()); // print 16
-        sb.append("yash"); //  char - 4 
+        sb.append("yash"); // char - 4
         System.out.println(sb.capacity()); // print 16
-        sb.append("pandey"); //  char - 6
+        sb.append("pandey"); // char - 6
         System.out.println(sb.capacity()); // print 16
-        sb.append("Anubhav Pandey"); // char - 14 [total = 24] 
-        System.out.println(sb.capacity()); // print 32 -> (old capacity * 2)+2  [old capacity = 16] 
-        // capacity automatically increase when default capacity[16] is full 
+        sb.append("Anubhav Pandey"); // char - 14 [total = 24]
+        System.out.println(sb.capacity()); // print 32 -> (old capacity * 2)+2 [old capacity = 16]
+        // capacity automatically increase when default capacity[16] is full
         System.out.println(sb);
         System.out.println(sb.delete(0, 10)); // delete method // return Anubhav Pandey
         System.out.println(sb.deleteCharAt(3));
-        // .equals() method in bufferclass do not override from object class , hence it check if content is at same memory location or not unlikely equals() method in string class
+        // .equals() method in bufferclass do not override from object class , hence it
+        // check if content is at same memory location or not unlikely equals() method
+        // in string class
         StringBuffer s5 = new StringBuffer("Anubhav Pandey");
         System.out.println(sb);
         System.out.println(sb.equals(s5));
@@ -50,7 +54,6 @@ public class ws_19_Strbuffer {
         sk.trimToSize();
         System.out.println(sk.capacity());
 
-        
     }
-    
+
 }
