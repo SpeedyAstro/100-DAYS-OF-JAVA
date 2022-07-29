@@ -27,6 +27,30 @@ public class ws_19_Strbuffer {
         sb.append("Anubhav Pandey"); // char - 14 [total = 24] 
         System.out.println(sb.capacity()); // print 32 -> (old capacity * 2)+2  [old capacity = 16] 
         // capacity automatically increase when default capacity[16] is full 
+        System.out.println(sb);
+        System.out.println(sb.delete(0, 10)); // delete method // return Anubhav Pandey
+        System.out.println(sb.deleteCharAt(3));
+        // .equals() method in bufferclass do not override from object class , hence it check if content is at same memory location or not unlikely equals() method in string class
+        StringBuffer s5 = new StringBuffer("Anubhav Pandey");
+        System.out.println(sb);
+        System.out.println(sb.equals(s5));
+        System.out.println(sb.indexOf("t"));
+        System.out.println(s5.insert(3, "dkdk"));
+        System.out.println(s5.replace(3, 7, "gg"));
+        System.out.println(s5.reverse());
+        StringBuffer sk = new StringBuffer();
+        System.out.println(sk.capacity()); // return 16
+        sk.ensureCapacity(100); //
+        System.out.println(sk.capacity()); // return 100
+        System.out.println(sk.append("yash pandey"));
+        sk.setCharAt(1, 'y');
+        sk.setLength(4);
+        System.out.println(sk);
+        System.out.println(sk.capacity());
+        sk.trimToSize();
+        System.out.println(sk.capacity());
+
+        
     }
     
 }
