@@ -1,5 +1,5 @@
 
-# LEARNING DSA IN JAVA <img src="https://media.giphy.com/media/mGcNjsfWAjY5AEZNw6/giphy.gif" width="50"></h2>
+# <h1 align='center'><a href="https://github.com/Mr-Anubhav-pandey/DSA-PROBLEMS"><code> LEARNING DSA IN JAVA </code></a></h1><img src="https://media.giphy.com/media/mGcNjsfWAjY5AEZNw6/giphy.gif" width="50"></h2>
 
 100 Days of DSA 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=Mr-Anubhav-pandey&label=Repo%20views&color=0e75b6&style=flat" alt="Mr-Anubhav-pandey/100-DAYS-OF-JAVA_DSA" /> </p>
