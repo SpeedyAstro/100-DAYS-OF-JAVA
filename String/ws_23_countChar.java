@@ -1,6 +1,7 @@
 public class ws_23_countChar {
     public static void main(String[] args) {
         String s = "anubhav pandey";
+        // s = s.replaceAll("\\s", ""); // removes spaces 
         int count[] = new int[126], max = -1;
         char c = ' ';
         for(int i=0 ; i < s.length(); i++){
