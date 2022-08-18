@@ -15,5 +15,6 @@ public class reverseStr {
         else{
             System.out.println("not");
         }
+        sc.close();
     }
 }
