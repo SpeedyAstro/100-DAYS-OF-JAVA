@@ -11,4 +11,17 @@ public class pangram {
         }
         return true;
     }
+    public boolean checkIfPangram2(String sentence) {
+        int [] arr = new int[26];
+        char [] chars = sentence.toCharArray();
+        for (char aChar : chars) {
+            arr[aChar - 97]++;
+        }
+        for(int ele:arr){
+            if(ele==0){
+                return false;
+            }
+        }
+        return true;
+    }
 }
