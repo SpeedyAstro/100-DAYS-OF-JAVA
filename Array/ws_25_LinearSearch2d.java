@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class ws_25_LinearSearch2d {
     public static void main(String[] args) {
         int [][] arr = {
@@ -6,17 +8,19 @@ public class ws_25_LinearSearch2d {
             {8,9,11,32,15}
         };
         int target = 15;
-        System.out.println(searchIn2d(arr, target));
+        // System.out.println(searchIn2d(arr, target));
+        int [] ans =searchIn2d(arr, target);
+        System.out.println(Arrays.toString(ans));
     }
-    private static boolean searchIn2d(int[][] arr, int target){
+    private static int[] searchIn2d(int[][] arr, int target){
         int ele;
         for(int i = 0 ; i < arr.length;i++){
             for(int j = 0;j<arr[i].length;j++){
                 if(arr[i][j] == target){
-                    return true;
+                    return new int[]{i,j};
                 }
             }
         }
-        return false;
+        return new int[]{-1,-1};
     }
 }
