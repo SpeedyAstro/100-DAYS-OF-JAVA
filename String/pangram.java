@@ -1,3 +1,5 @@
+package String;
+
 public class pangram {
     public static boolean checkIfPangram(String senetence){
         if(senetence.length()<26){
