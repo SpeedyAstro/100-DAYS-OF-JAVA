@@ -12,5 +12,7 @@ class ByteStreamP{
         //     -> public void flush() throws IOExceptio
         //     -> public void close() throws IOExceptio
         // Hieracrchy of InputStream and output stream
+
+        1. 
     }
 }
