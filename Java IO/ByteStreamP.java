@@ -13,6 +13,5 @@ class ByteStreamP{
         //     -> public void close() throws IOExceptio
         // Hieracrchy of InputStream and output stream
 
-        1. 
     }
 }
