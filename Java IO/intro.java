@@ -39,7 +39,7 @@ public class intro {
     public static void main(String[] args) {
         System.err.println("hello world !");
         try{
-        FileInputStream fis = new FileInputStream("C:\\Users\\pande\\Documents\\100-DAYS-OF-JAVA_DSA\\Java IO\\intro.java");
+        FileInputStream fis = new FileInputStream("C:\\Users\\pande\\Documents\\100-DAYS-OF-JAVA\\Java IO\\intro.java");
         int i ;
         while((i=fis.read()) != -1){
             System.out.print((char)i);
