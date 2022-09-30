@@ -1,6 +1,6 @@
 package Collections;
 
-public class collection {
+public class collectionTut {
     /*
      * collections is a single entitity which can store multiple objects / data 
      * collections framework can store only non-primitive data type (objects)
@@ -23,5 +23,13 @@ public class collection {
      * 5.default boolean removeIf(-) { - }
      * 6.boolean retainAll(Collection c);  retain the passed agrument and clear everything in a collection
      * 7.void clear();
+     * 8. boolean contains(Object obj);
+     * 9. boolean containsAll(Collection C);
+     * 10. boolean isEmpty();
+     * 11. int size();
+     * 12. Iterator iterator();
+     * 13. Object toArray();
+     * 14. boolean equals(Object obj);
+     * 15. int hashCode();
      */
 }

@@ -1,6 +1,6 @@
 // package Multithreading;
 
-public class intro {
+public class intro1 {
     // public static void main(String[] args) {
         /*
          *  Multitasking - multiple task at same time , use the concept of context switching internally
