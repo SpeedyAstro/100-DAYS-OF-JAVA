@@ -1,4 +1,4 @@
-//package Collections;
+package Collections;
 
 import java.util.LinkedList;
 
@@ -68,4 +68,18 @@ public class LinkedListTut {
     // superfast in insertion and deletion 
     // when not to use 
     // worst in reterival or searching operations as linked list does not inherit random access interface
+    /*
+     * difference between Arraylist and linked list
+     * 1. Arraylist underline data structure is dynamic array or resizable array
+     * Linkelist underline data structure is double linked list or circular linked list
+     * 
+     * 2. Arraylist stores element in contigeous memory locations 
+     * Linkekd list do not store in contigeous memory locations
+     * 
+     * 3. Arraylist acts as list
+     * Linkedlist can acts list and deque
+     * 
+     * 4. Arraylist is good in reterival operations 
+     * Linkedlist is good in insertion and deletion operations
+     */
 }
