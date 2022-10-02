@@ -70,5 +70,12 @@ or hetrogeneous elements
         }
         System.out.println(v);
         System.out.println(v.capacity());
+        System.out.println(v.firstElement());
+        System.out.println(v.lastElement());
+        v.removeElementAt(3);
+        System.out.println(v);
+        v.removeAllElements();
+        System.out.println(v);
+        
     }
 }
