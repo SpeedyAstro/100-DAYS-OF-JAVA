@@ -1,5 +1,7 @@
 package Collections;
 
+import java.util.HexFormat;
+
 import Collections.SinglyLinkedList.LinkNode;
 
 class SinglyLinkedList{
@@ -34,6 +36,14 @@ class SinglyLinkedList{
         newNode.next = head;
         head = newNode;
     }
+    public void insertEnd(int value){
+        LinkNode newNode = new LinkNode(value);
+        LinkNode curreNode = head;
+        while(curreNode.next!=null){
+            curreNode =curreNode.next;
+        }
+        curreNode.next = newNode;
+    }
 }
 
 public class ImplementLinkedlist {
@@ -52,5 +62,7 @@ public class ImplementLinkedlist {
         sll.insertFirst(35);
         sll.printLL(sll.head);
         System.out.println("length of Linked List is : "+sll.length(sll.head));
+        sll.insertEnd(99);
+        sll.printLL(sll.head);
     }
 }
