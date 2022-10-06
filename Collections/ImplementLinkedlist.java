@@ -44,6 +44,22 @@ class SinglyLinkedList{
         }
         curreNode.next = newNode;
     }
+    public void insertPosi(int position , int value){
+        LinkNode node = new LinkNode(value);
+        if(position == 1){
+            node.next = head;
+            head = node;
+        }else{
+            LinkNode previous = head;
+            int count = 0;
+            while(count<position-1){
+                previous = previous.next;
+                count++;
+            }
+            node.next = previous.next;
+            previous.next = node;
+        }
+    }
 }
 
 public class ImplementLinkedlist {
