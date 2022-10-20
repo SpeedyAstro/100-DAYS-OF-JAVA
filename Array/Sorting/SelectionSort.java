@@ -18,7 +18,9 @@ public class SelectionSort {
         arr[first] = arr[second];
         arr[second] = temp;
     }
-
+    /*
+     * @getMaxIndex finds the largest element in the array 
+     */
     static int getMaxIndex(int[] arr, int start, int end) {
         int max = start;
         for (int i = start; i <= end; i++) {
