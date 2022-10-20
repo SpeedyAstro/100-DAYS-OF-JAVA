@@ -1,9 +1,14 @@
+import java.util.Arrays;
+
 public class BubbleSort {
     public static void main(String[] args) {
+        int [] arr = {-1,7,-32,0,89};
+        bubble(arr);
+        System.out.println(Arrays.toString(arr));
         
     }
     public static void bubble(int []arr ){
-        boolean flag ;
+        boolean flag = false;
         for(int i = 0 ; i<arr.length ; i++){
             for(int j = 1; j < arr.length-i;j++){
                 if(arr[j]<arr[j-1]){
@@ -21,3 +26,7 @@ public class BubbleSort {
         }
     }
 }
+/*
+ * Output -
+ * [-32, -1, 0, 7, 89]
+ */
