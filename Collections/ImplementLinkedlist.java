@@ -14,7 +14,7 @@ class SinglyLinkedList{
             this.next = null;
         }
     }
-    public void printLL(LinkNode head){
+    public void printLL(){
         LinkNode current = head;
         while (current!=null){
             System.out.print(current.data+" -> ");
@@ -60,6 +60,43 @@ class SinglyLinkedList{
             previous.next = node;
         }
     }
+    public void deleteFirstNode(){
+        if(head.next==null) System.out.println("There is single node in the linked list");
+        else {
+            LinkNode temp = head;
+            head = head.next;
+            temp.next = null; // deleting the head
+        }
+    }
+    public void deleteLastNode(){
+        if(head==null||head.next==null) System.out.println(head);
+        else {
+            LinkNode current = head;
+            LinkNode LastNode = head;
+            while (current.next != null) {
+                LastNode = current;
+                current = current.next;
+            }
+            LastNode.next = null;
+            current = null;
+        }
+    }
+    public void deleteNode(int position){
+        if(position==1){
+            head = head.next;
+        } else if (head==null) {
+            System.out.println("null");
+        } else {
+            LinkNode temp = head;
+            int count = 1;
+            while (count<position-1){
+                temp = temp.next;
+                count++;
+            }
+            LinkNode nextNode = temp.next;
+            temp.next = nextNode.next;
+        }
+    }
 }
 
 public class ImplementLinkedlist {
@@ -73,12 +110,18 @@ public class ImplementLinkedlist {
         sll.head.next = second;
         second.next = third;
         third.next = fourth; // 10->2->31->4->null
-        sll.printLL(sll.head);
+        sll.printLL();
         System.out.println("length of Linked List is : "+sll.length(sll.head));
         sll.insertFirst(35);
-        sll.printLL(sll.head);
+        sll.printLL();
         System.out.println("length of Linked List is : "+sll.length(sll.head));
         sll.insertEnd(99);
-        sll.printLL(sll.head);
+        sll.printLL();
+        sll.deleteFirstNode();
+        sll.printLL();
+        sll.deleteLastNode();
+        sll.printLL();
+        sll.deleteNode(2);
+        sll.printLL();
     }
 }
