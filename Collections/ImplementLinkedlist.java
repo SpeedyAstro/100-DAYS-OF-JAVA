@@ -97,6 +97,30 @@ class SinglyLinkedList{
             temp.next = nextNode.next;
         }
     }
+    public int SearchNode(int value){
+        int count = 1;
+        LinkNode temp = head;
+        while (temp!=null){
+            if(temp.data==value){
+                return count;
+            }
+            count++;
+            temp = temp.next;
+        }
+        return 0;
+    }
+    public void reverseLinkList(){
+        LinkNode previous = null;
+        LinkNode next = null;
+        LinkNode current = head;
+        while (current!=null){
+            next = current.next;
+            current.next = previous;
+            previous = current;
+            current = next;
+        }
+        head = previous;
+    }
 }
 
 public class ImplementLinkedlist {
@@ -123,5 +147,10 @@ public class ImplementLinkedlist {
         sll.printLL();
         sll.deleteNode(2);
         sll.printLL();
+        System.out.println(sll.SearchNode(4));
+        sll.printLL();
+        sll.reverseLinkList();
+        sll.printLL();
+
     }
 }
