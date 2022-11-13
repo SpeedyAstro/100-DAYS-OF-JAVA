@@ -121,6 +121,15 @@ class SinglyLinkedList{
         }
         head = previous;
     }
+    public int middleNode(){
+        LinkNode slowptr = head;
+        LinkNode fastptr = head;
+        while (fastptr!=null&&fastptr.next!=null){
+            slowptr = slowptr.next;
+            fastptr = fastptr.next.next;
+        }
+        return slowptr.data;
+    }
 }
 
 public class ImplementLinkedlist {
