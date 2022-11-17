@@ -130,6 +130,33 @@ class SinglyLinkedList{
         }
         return slowptr.data;
     }
+    // to get the nth element from the end
+    public int elementFromEnd(int n){
+        if(n<=0) return 0 ;
+        LinkNode refPtr = head;
+        LinkNode mainPtr = head;
+        int count = 1;
+        while (count<n){
+            count++;
+            refPtr = refPtr.next;
+        }
+        while (refPtr!=null){
+            refPtr = refPtr.next;
+            mainPtr = mainPtr.next;
+        }
+        return refPtr.data;
+    }
+    // remove duplicates from the sorted linked list
+    public void removeDuplicatesInSortedLL(){
+        LinkNode current = head;
+        while (current!=null&&current.next!=null){
+            if(current.data==current.next.data){
+                current.next = current.next.next;
+            }else {
+                current = current.next;
+            }
+        }
+    }
 }
 
 public class ImplementLinkedlist {
