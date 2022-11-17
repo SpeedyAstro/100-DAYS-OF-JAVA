@@ -5,7 +5,7 @@ import java.util.HexFormat;
 import Collections.SinglyLinkedList.LinkNode;
 
 class SinglyLinkedList{
-    public LinkNode head;
+    public static LinkNode head;
     public static class LinkNode{
         public int data;
         public LinkNode next;
@@ -31,7 +31,7 @@ class SinglyLinkedList{
         }
         return count;
     }
-    public void insertFirst(int value){
+    public static void insertFirst(int value){
         LinkNode newNode = new LinkNode(value);
         newNode.next = head;
         head = newNode;
@@ -146,17 +146,7 @@ class SinglyLinkedList{
         }
         return refPtr.data;
     }
-    // remove duplicates from the sorted linked list
-    public void removeDuplicatesInSortedLL(){
-        LinkNode current = head;
-        while (current!=null&&current.next!=null){
-            if(current.data==current.next.data){
-                current.next = current.next.next;
-            }else {
-                current = current.next;
-            }
-        }
-    }
+
 }
 
 public class ImplementLinkedlist {
