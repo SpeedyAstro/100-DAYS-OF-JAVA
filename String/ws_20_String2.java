@@ -1,3 +1,5 @@
+package String;
+
 public class ws_20_String2 {
     public static void main(String[] args) {
         // String str1 = new String("YASH");
@@ -15,22 +17,22 @@ public class ws_20_String2 {
         System.out.println(str5);
 
         /*
-         * tempelete for validating User Input
+         * template for validating User Input
          * = length() 
          * = isEmpty()
          * = trim() removes spaces 
          */
         /*
-         * Tempelete for Comparing two string 
+         * template for Comparing two string
          * = equals()
          * = equalsIgnoreCase()
          * = compareTo()
          * = compareToIgnoreCase()
          */
         /*
-         * Concatination of two string
+         * Concatenation of two string
          * = '+' operator
-         * = concat() = concats string
+         * = concat() = concat string
          */
         /*
          * Get substring from string
