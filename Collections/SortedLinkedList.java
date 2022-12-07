@@ -52,4 +52,24 @@ public class SortedLinkedList {
         }
         return false;
     }
+
+    // return the first / start node of loop in sll
+    public LinkNode getLoopStartingNode(){
+        LinkNode fastptr = head;
+        LinkNode slowptr = head;
+        while (fastptr!=null && fastptr.next!=null){
+            fastptr = fastptr.next.next;
+            slowptr = slowptr.next;
+            if (fastptr==slowptr) return loopNode(slowptr);
+        }
+        return fastptr;
+    }
+    public LinkNode loopNode(LinkNode slowptr){
+        LinkNode temp = head;
+        while (slowptr!=temp){
+            temp = temp.next;
+            slowptr = slowptr.next;
+        }
+        return temp;
+    }
 }
