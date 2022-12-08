@@ -54,6 +54,7 @@ public class SortedLinkedList {
     }
 
     // return the first / start node of loop in sll
+    // Floyd's Cycle Detection algorithm
     public LinkNode getLoopStartingNode(){
         LinkNode fastptr = head;
         LinkNode slowptr = head;
