@@ -73,4 +73,25 @@ public class SortedLinkedList {
         }
         return temp;
     }
+    // Remove loop from singly linked list
+    public void RemoveLoop(){
+        LinkNode fastptr = head;
+        LinkNode slowptr = head;
+        while (fastptr!=null && fastptr.next!=null){
+            fastptr = fastptr.next.next;
+            slowptr = slowptr.next;
+            if (slowptr==fastptr){
+                removeLL(slowptr);
+                return;
+            }
+        }
+    }
+    public void removeLL(LinkNode slowptr){
+        LinkNode temp = head;
+        while (slowptr.next!=temp.next){
+            temp = temp.next;
+            slowptr = slowptr.next;
+        }
+        slowptr.next = null;
+    }
 }
