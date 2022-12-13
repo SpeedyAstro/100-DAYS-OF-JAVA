@@ -94,4 +94,7 @@ public class SortedLinkedList {
         }
         slowptr.next = null;
     }
+    public void merge(LinkNode a ,LinkNode b){
+
+    }
 }
