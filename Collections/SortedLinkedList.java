@@ -94,7 +94,26 @@ public class SortedLinkedList {
         }
         slowptr.next = null;
     }
-    public void merge(LinkNode a ,LinkNode b){
 
+    // merge two sorted list
+    public LinkNode merge(LinkNode a ,LinkNode b){
+        LinkNode dummy = new LinkNode(0);
+        LinkNode tail = dummy;
+        while (a!=null && b!=null){
+            if(a.data<=a.data){
+                tail.next=a;
+                a = a.next;
+            }else{
+                tail.next = b;
+                a = a.next;
+            }
+            tail = tail.next;
+        }
+        if (a == null){
+            tail.next = b;
+        }else{
+            tail.next = a;
+        }
+        return dummy.next;
     }
 }
