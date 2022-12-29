@@ -22,5 +22,9 @@ public class AddElements2LL {
             if(a!=null) a =a.next;
             if(b!=null) b =b.next;
         }
+        if(carry>0){
+            tail.next = new LinkNode(carry);
+        }
+        return dummy.next;
     }
 }
