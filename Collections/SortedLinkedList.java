@@ -100,7 +100,7 @@ public class SortedLinkedList {
         LinkNode dummy = new LinkNode(0);
         LinkNode tail = dummy;
         while (a!=null && b!=null){
-            if(a.data<=a.data){
+            if(a.data<=b.data){
                 tail.next=a;
                 a = a.next;
             }else{
