@@ -29,4 +29,14 @@ public class DoublyLL {
     public int getLength(){
         return length;
     }
+    public void displayForward(){
+        if(head==null) return;
+        ListNode temp = head;
+        while (temp!=null){
+            System.out.println(temp.data +" --> ");
+            temp = temp.next;
+        }
+        System.out.println("null");
+    }
+
 }
