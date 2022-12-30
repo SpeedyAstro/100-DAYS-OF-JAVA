@@ -38,5 +38,12 @@ public class DoublyLL {
         }
         System.out.println("null");
     }
-
+    public void  displayBackward(){
+        if (tail==null) return;
+        ListNode temp = tail;
+        while (temp!=null){
+            System.out.println(temp.data +" --> ");
+            temp = temp.previous;
+        }
+    }
 }
