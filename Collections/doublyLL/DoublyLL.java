@@ -30,21 +30,34 @@ public class DoublyLL {
         return length;
     }
     public void displayForward(){
-        if(head==null) return;
+        if(isEmpty()) return;
         ListNode temp = head;
         while (temp!=null){
             System.out.println(temp.data +" --> ");
             temp = temp.next;
         }
-        System.out.println("null");
+        System.out.print("null");
     }
     public void  displayBackward(){
-        if (tail==null) return;
+        if (isEmpty()) return;
         ListNode temp = tail;
         while (temp!=null){
             System.out.println(temp.data +" --> ");
             temp = temp.previous;
         }
     }
+    public void insertFirst(int value){
+        ListNode newNode = new ListNode(value);
+        if(isEmpty()) tail = newNode;
+        else head.previous = newNode;
+        newNode.next = head;
+        head = newNode;
+        length++;
+    }
 
+    public static void main(String[] args) {
+        DoublyLL doublyLL = new DoublyLL();
+        doublyLL.insertFirst(1);
+        doublyLL.displayForward();
+    }
 }
