@@ -4,6 +4,8 @@ package Collections.doublyLL;
 // a node in singly linked list can only be deleted if we have a pointer to its previous node, but in doubly linked list we can delete the node even if we don't have pointer to its previous node.
 //  <--[previous | data | next ]-->
 
+import java.util.NoSuchElementException;
+
 public class DoublyLL {
 
     private ListNode head;
@@ -30,21 +32,24 @@ public class DoublyLL {
         return length;
     }
     public void displayForward(){
+        System.out.println();
         if(isEmpty()) return;
         ListNode temp = head;
         while (temp!=null){
-            System.out.println(temp.data +" --> ");
+            System.out.print(temp.data +" --> ");
             temp = temp.next;
         }
         System.out.print("null");
     }
     public void  displayBackward(){
+        System.out.println();
         if (isEmpty()) return;
         ListNode temp = tail;
         while (temp!=null){
-            System.out.println(temp.data +" --> ");
+            System.out.print(temp.data +" --> ");
             temp = temp.previous;
         }
+        System.out.print("null");
     }
     public void insertFirst(int value){
         ListNode newNode = new ListNode(value);
@@ -52,9 +57,9 @@ public class DoublyLL {
         else {
             head.previous = newNode;
             newNode.next = head;
+        }
             head = newNode;
             length++;
-        }
     }
 
     public void insertEnd(int value){
@@ -67,9 +72,23 @@ public class DoublyLL {
         tail = newNode;
         length++;
     }
+// #Delete head of doubly linked list
+    public void deleteHead(){
+        if (isEmpty()) throw new NoSuchElementException();
+        ListNode temp = head;
+        if (head == tail) tail = null;
+        else head.next.previous = null;
+        head = head.next;
+        temp.next = null;
+        length--;
+    }
     public static void main(String[] args) {
         DoublyLL doublyLL = new DoublyLL();
         doublyLL.insertFirst(1);
+        doublyLL.insertEnd(2);
+        doublyLL.insertEnd(3);
         doublyLL.displayForward();
+        doublyLL.displayBackward();
+        doublyLL.deleteHead();
     }
 }
