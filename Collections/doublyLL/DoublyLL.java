@@ -49,12 +49,24 @@ public class DoublyLL {
     public void insertFirst(int value){
         ListNode newNode = new ListNode(value);
         if(isEmpty()) tail = newNode;
-        else head.previous = newNode;
-        newNode.next = head;
-        head = newNode;
-        length++;
+        else {
+            head.previous = newNode;
+            newNode.next = head;
+            head = newNode;
+            length++;
+        }
     }
 
+    public void insertEnd(int value){
+        ListNode newNode = new ListNode(value);
+        if (isEmpty()) head = newNode;
+        else{
+            tail.next = newNode;
+            newNode.previous = tail;
+        }
+        tail = newNode;
+        length++;
+    }
     public static void main(String[] args) {
         DoublyLL doublyLL = new DoublyLL();
         doublyLL.insertFirst(1);
