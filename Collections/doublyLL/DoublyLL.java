@@ -82,6 +82,16 @@ public class DoublyLL {
         temp.next = null;
         length--;
     }
+    // #Delete tail of doubly linked list
+    public void deleteTail(){
+        if (isEmpty()) throw new NoSuchElementException();
+        ListNode temp = tail;
+        if (head == tail) head = null;
+        else tail.previous.next = null;
+        tail = tail.previous;
+        temp.previous = null;
+        length--;
+    }
     public static void main(String[] args) {
         DoublyLL doublyLL = new DoublyLL();
         doublyLL.insertFirst(1);
