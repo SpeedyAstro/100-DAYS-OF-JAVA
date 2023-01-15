@@ -13,7 +13,7 @@ public class CyclicSort {
         while (i<arr.length){
             int correct = arr[i]-1;
             if (arr[i]!=arr[correct]){
-                swap(arr,i,correct);
+                swap(arr,i,correct); // passing two locations
             } else {
                 i++;
             }
