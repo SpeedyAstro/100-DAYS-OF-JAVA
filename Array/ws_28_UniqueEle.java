@@ -10,3 +10,6 @@ public class ws_28_UniqueEle {
         return ans;
     }
 }
+interface test{
+    
+}

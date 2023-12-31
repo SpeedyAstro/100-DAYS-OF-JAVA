@@ -1,11 +1,11 @@
-//package BinarySearch;
+package BinarySearch;
+
 // find element less than target close to the start in a sorted array non - distinct
-public class FindTargt2 {
+public class FloorInArray {
     public static int floorInArray(int arr[], int low, int high, int x)
     {
         if (low > high)
             return -1;
-
         // If last element is smaller than x
         if (x >= arr[high])
             return high;
